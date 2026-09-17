@@ -1,0 +1,21 @@
+# sensor_demo YAML config. Command-line options override this file.
+# width/height: 1280x1088 (default), 640x480, 720x480, or 1280x720 (either axis).
+camera:
+  width: 1280
+  height: 1088
+  fps: 30
+  rotate: 0
+rtsp:
+  bps: 4000
+  codec: h264
+  url: /PRR
+imu:
+  sample_rate_hz: 1000
+  print_rate_hz: 10
+  print_metrics: false
+
+save_data:
+  save: false
+  format: mp4
+  save_path: /root/demo/save_mp4/
+  skip: false
