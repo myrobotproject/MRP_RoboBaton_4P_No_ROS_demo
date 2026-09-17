@@ -4,7 +4,7 @@ Chinese version: [README_Chinese.md](README_Chinese.md)
 
 ![RoboBaton 4P](image/4P_Cam.png)
 
-This repository provides the RoboBaton 4P non-ROS demo runtime package for the X5 board, demo source code, public C headers, matching prebuilt runtime libraries, and build/package scripts. The description below is based only on the contents of this repository.
+This repository provides the RoboBaton 4P non-ROS demo runtime package for the X5 board, demo source code, public C headers, matching prebuilt runtime libraries, and build/package scripts. 
 
 ## Repository Contents
 
@@ -177,18 +177,6 @@ Do not delete `/root/demo` before uploading the new package. Do not mix same-nam
 - The IMU uses the sensor-timestamp FIFO path. This repository does not provide TF or calibration files.
 - DEBUG_UART is `1.8V`; UART1/UART7 are `3.3V`.
 - Camera operation depends on the X5 board-side `cam-service`.
-
-## Troubleshooting
-
-For startup, shared-library, RTSP, IMU, or UART issues, keep:
-
-- Root `VERSION` and `demo/VERSION`
-- `demo/manifest.sha256` verification result
-- Exact command and exit code
-- `--version` output
-- Necessary stdout/stderr logs
-
-Do not submit real IP addresses, credentials, or internal paths in issue material.
 
 ## License
 
